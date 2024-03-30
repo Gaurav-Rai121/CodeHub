@@ -22,15 +22,15 @@
         $_SESSION['loggedin']=true;
         $_SESSION['sno'] = $rows['sno'];
         $_SESSION['useremail']=$email;
-        header("location:/forum/home.php");
+        header("location:/forum/home.php?login=true");
        }
-       header("location:/forum/home.php");
+       header("location:/forum/home.php?login=error");
       
     }
     else
     {
-      echo "error";
-      header("location:/forum/home.php");
+     
+      header("location:/forum/home.php?login=false");
     }
    
  }

@@ -53,16 +53,16 @@
                 <form method='post' action="/forum/components/handle_signup.php">
                     <div class="modal-body">
 
-                        <div class="upload">
+                        <!-- <div class="upload">
                             <img src="components/images/user.jpg" class="user" alt=" is the image" width="100"
                                 height="100">
                             <div class="round">
-                                <input type="file" name="image" accept=".png, .jpg, .jpeg" >
+                                <input type="file" name="image" accept=".png, .jpg, .jpeg">
                                 <i class="fa fa-camera" class="file"><img src="components/images/camera.jpg" alt=""
                                         height="20px" class="file"></i>
 
                             </div>
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">UserEmail:</label>
                             <input type="text" placeholder="enter your name" class="form-control"
@@ -82,10 +82,7 @@
                         <button type="submit" class="btn btn-primary">Signin</button>
 
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                    </div>
+                  
                 </form>
             </div>
         </div>

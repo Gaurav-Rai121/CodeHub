@@ -7,19 +7,17 @@
 }
 nav {
     background-color:white;  
-    font-weight:700;
+    font-weight:400;
     /* border-bottom:2px,solid black; */
     box-shadow: 0 10px 50px #d3d3d3;
     
 
 }
-/* nav ul li a{
-    transition: 0.5em;
-} */
- nav ul li a:hover{
+
+ /* nav ul li a:hover{
      text-decoration: underline;  
      color:pink; 
-} 
+}  */
 
 .footer{
     background-color:white
@@ -31,7 +29,7 @@ body{
     justify-content: center; */
     align-items: center;
     min-width: 100vh; 
-    background-color:rgb(245, 15, 15);
+    background-color:WHITE;
 }
 
 .container1{
@@ -42,6 +40,7 @@ body{
     flex-wrap:wrap;
     gap: 100px, 50px;
     padding: 150px, 50px;
+    
 }
 
 .container1 .mycard{

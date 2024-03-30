@@ -7,11 +7,23 @@
     <title>Welcome to CodeHub-Coding Forum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="components/stylesheet/home.style.css">
+     <link rel="stylesheet" href="components/stylesheet/home.style.css">
+ 
+<style>
+    nav {
+         background-color: white;
+         font-weight: 700;
+         /* border-bottom:2px,solid black; */
+         box-shadow: 0 10px 50px #d3d3d3;
 
 
+     }
 
-
+     nav ul li a:hover {
+         text-decoration: underline;
+         color: pink;
+     }
+</style>
 
 </head>
 
@@ -95,7 +107,7 @@
                     <div class="content">
                        <h5><a href="thread.php?catid=' .$myid. '">' .$mytitle. '</a></h5>
                         <p >' .substr($mydesc,0,70). '...</p>
-                        <a href="thread.php?catid=' .$myid. '" class="btn btn-primary">View Threads</a>
+                        <a href="thread.php?catid=' .$myid. '" class="btn btn-secondary">View Threads</a>
                     </div>
                  </div>
                 </div>

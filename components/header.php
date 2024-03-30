@@ -51,15 +51,14 @@ include('components/login_modal.php');
   <li class="nav-item">
   <a class="nav-link active" aria-current="page" href="courses.php">Online Free Courses</a>
 </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="About.php">About</a>
-  </li>
-  <li class="nav-item dropdown">
+<li class="nav-item dropdown">
     <a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Top Categories
     </a>
     <ul class="dropdown-menu">
-    <li>';
+    <li>
+  ';
+  
     $myrow4="SELECT `category_name`,`category_id` FROM `categories` LIMIT 4 ";
     $myconn3=mysqli_query($myconnect,$myrow4);  
     while($myfetch2=mysqli_fetch_assoc($myconn3))
@@ -71,6 +70,9 @@ include('components/login_modal.php');
    <li class="nav-item">
    <a class="nav-link active" href="contact.php">Contact</a>
  </li>
+ <li class="nav-item">
+    <a class="nav-link active" href="About.php">About</a>
+  </li>
  </ul>';
  
 
