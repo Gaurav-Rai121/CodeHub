@@ -10,4 +10,20 @@
   div .mytitle{
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+
+  nav {
+     background-color:white;  
+     font-weight:700;
+     /* border-bottom:2px,solid black; */
+     box-shadow: 0 10px 50px #d3d3d3;
+     
+ 
+ }
+ /* nav ul li a{
+     transition: 0.5em;
+ } */
+  nav ul li a:hover{
+      text-decoration: underline;  
+      color:pink; 
+ } 
  
