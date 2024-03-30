@@ -43,7 +43,7 @@
       <div class="round">
         <input type="file">
         <i class="fa fa-camera"><img src="./images/camera.jpg" alt="" height="20px"></i>
-       
+       <p><p>
       </div>
     </div>
     <img src="./images/camera.jpg" alt="" height="20px">

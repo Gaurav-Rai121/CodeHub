@@ -10,7 +10,7 @@
 //  }
 //  else
 //  {
-//    echo "server is connected";
+//    echo "server is connected pease check the code";
 //  }
 
 

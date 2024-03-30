@@ -24,7 +24,7 @@
     <div class="mydiv">
         <div class="h1 ">
             <span class="text-left codehub container">Welcome to</span><span class="codehub mt-50; span2"> CodeHub</span>
-            <p class=" container">CodeHub is a dynamic online platform designed to serve as a collaborative space for programmers,
+            <p class="container">CodeHub is a dynamic online platform designed to serve as a collaborative space for programmers,
                 developers, and
                 tech enthusiasts. It acts as a forum where individuals can engage in discussions, share insights, seek
                 advice,
