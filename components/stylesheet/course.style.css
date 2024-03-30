@@ -1,0 +1,8 @@
+.card{
+    transition:all 0.3s;
+     box-shadow: 0 10px 50px #d3d3d3; 
+  }
+  .card:hover{
+       transform:scale(1.15);
+       
+  }
