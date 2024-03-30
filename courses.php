@@ -16,7 +16,7 @@
     <?php include('components/header.php');?>
 
     <div class="container my-10">
-        <h2 class="text-center my-5">Online free courses on Youtube</h2>
+        <h2 class="text-left my-5">Online free courses on Youtube</h2>
         <div class="row">
 
             <!-- fetching the online free course data from the database -->
