@@ -20,10 +20,7 @@
             include('components/database.php');
              include('components/header.php');?>
     
-     <div class="container" id="ques">
-         <h2 class="text-center my-3">🅲🅾🅳🅴🅷🆄🅱-🅲🅰🆃🅴🅶🅾🆁🅸🅴🆂</h2>
-
-     </div>
+ 
 
      <?php include('components/footer.php');?>
 

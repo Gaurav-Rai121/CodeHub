@@ -16,8 +16,11 @@
     <?php include('components/header.php');?>
 
     <div class="container my-10">
-        <h2 class="text-left my-5">Online free courses on Youtube</h2>
+        <h2 class="text-center my-5 mytitle">Free courses on <img src="components/images/youtube.jpeg" height="60px" width="80px"></h2>
+        <input class="form-control me-2 w-50 inline-block mb-3" type="search" placeholder="&#128269 Search" aria-label="Search" >
+   
         <div class="row">
+            
 
             <!-- fetching the online free course data from the database -->
             <?php  
@@ -144,6 +147,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+     <?php include('components/footer.php');?>
 
 </body>
 

@@ -6,10 +6,9 @@
     font-family:'Poppins' , sans-serif;
 }
 nav {
-    background-color:white;  
-    color:green;
+    background-color:rgb(200, 18, 18);  
     font-weight:700;
-    border-bottom:2px,solid black;
+    /* border-bottom:2px,solid black; */
     box-shadow: 0 10px 50px #d3d3d3;
     
 
@@ -18,12 +17,12 @@ nav ul li a{
     transition: 0.5em;
 }
 nav ul li a:hover{
-    text-decoration: underline; 
+    /* text-decoration: underline;  */
     color:pink;
 }
 
 .footer{
-    background-color:#bcf5bc
+    background-color:white
 
 }
 

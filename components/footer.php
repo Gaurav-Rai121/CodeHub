@@ -1,4 +1,4 @@
-<div class="">
+<div class=" bg-light">
     <img class="float-left rounded-top" src="components/images/CodeHub.png" width="90" height="80" alt="">
     <pre class="text-left d-inline-flex">𝐂𝐨𝐝𝐞𝐇𝐮𝐛 | Copyright CodeHub Coding Forum 2023 | All right reserved</pre>
 
