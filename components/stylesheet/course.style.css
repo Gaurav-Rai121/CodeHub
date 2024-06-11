@@ -1,14 +1,10 @@
 .card{
-    transition:all 0.3s;
+     transition:all 0.3s; 
      box-shadow: 0 10px 50px #d3d3d3; 
   }
   .card:hover{
        transform:scale(1.15);
        
-  }
-
-  div .mytitle{
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
  

@@ -162,14 +162,16 @@
                                                 <?php echo $myname; ?>  </span></h2>
         
         <div class="mes">
-            
+           <p class="receiver">hello</p> 
+           <!-- <p class="sender">hello</p> -->
 
         </div>
 
         <div class="input-msg">
             
             <input type="text" id="userInput">
-            <button onclick="sendMessage()">send</button>
+            <button >send</button>
+            <input type="submit">
         </div>
     </div>
     <?php
@@ -184,9 +186,9 @@
     ?>
       
     <script>
-        window.onkeydown=(e)=>{
-            if(e.key=="enter")sendMessage();
-        }
+        // window.onkeydown=(e)=>{
+        //     if(e.key=="enter")sendMessage();
+        // }
         function sendMessage() {
         let input=document.body.getElementsByTagName("input").value;
 
@@ -200,6 +202,55 @@
         then(()=>console.log("message has been added"))
 
         }
+    myInputValue= document.body.querySelector("input").value
+    console.log(myInputValue);
+
+document.body.querySelector("button").addEventListener("click",()=>{
+    document.body.querySelectorAll("p")[1].innerHTML=myInputValue;
+
+})
+
+document.body.querySelectorAll("input")[1].addEventListener("click",()=>{
+    document.body.querySelectorAll("p")[1].innerHTML=myInputValue;
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 </body>

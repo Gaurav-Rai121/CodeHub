@@ -15,8 +15,8 @@
             <div class="modal-body">
            
                     <div class="mb-3">
-                        <label for="useremail" class="form-label">Username:</label>
-                        <input type="text" placeholder="enter your name" class="form-control" id="useremail" name="useremail"
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" placeholder="enter your name" class="form-control" id="username" name="username"
                             aria-describedby="emailHelp">
 
                     </div>
@@ -27,13 +27,10 @@
                     <div id="userHelp" class="form-text">We'll never share your username and passsword with anyone else.
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-success">Login</button>
                
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
+            
             </form>
         </div>
     </div>

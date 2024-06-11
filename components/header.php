@@ -1,11 +1,12 @@
-<??>
+<?php  session_start();?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
     /* nav{
 
       background-image: url("components/images/background.jpg");
@@ -13,12 +14,22 @@
              color:white;
   
   } */
-  </style>
-</head>
-<body>
-  
+    .navbar a {
+        text-decoration: none;
 
-<?php
+    }
+
+    .profile {
+        margin-left: 20px;
+        margin-right: 5px
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <?php
 
 include('components/signin_modal.php');
 include('components/login_modal.php');
@@ -102,11 +113,11 @@ include('components/login_modal.php');
             if(!$loggedin)
             {
               echo '<form class="d-flex" role="search" action="search.php" method="get">
-              <input class="form-control me-2" type="search" placeholder="🆂🅴🅰🆁🅲🅷" aria-label="Search" name="search">
-              <button class="btn btn-outline-primary ml-2" >Search</button>
+              <input class="form-control me-2" type="search" placeholder="🆂🅴🅰🆁🅲🅷" aria-label="Search" name="querry">
+              <button class="btn btn-outline-success ml-2" >Search</button>
                 </form>
-                <button type="button" class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">LogIn</button>
-                <button type="button" class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#signinModal"> SignUp</button>
+                <button type="button" class="btn btn-outline-success ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">LogIn</button>
+                <button type="button" class="btn btn-outline-success ms-2" data-bs-toggle="modal" data-bs-target="#signinModal"> SignUp</button>
                
                 ';
             }
@@ -116,8 +127,8 @@ include('components/login_modal.php');
       
        {
           echo '<form class="d-flex" role="search" action="search.php" method="get">
-                <input class="form-control me-2" type="search" placeholder="🆂🅴🅰🆁🅲🅷" aria-label="Search" name="search">
-                <button class="btn btn-outline-primary ml-2" >Search</button>
+                <input class="form-control me-2" type="search" placeholder="&#128269 🆂🅴🅰🆁🅲🅷" aria-label="Search" name="querry">
+                <button class="btn btn-outline-success ml-2" >Search</button>
                   </form>
 
             
@@ -149,42 +160,26 @@ include('components/login_modal.php');
 
 
 
+                     <img src="components/images/user.jpg" height="20px" class="border-radius-sm rounded-circle mr-2 profile"/>
 
 
+                     <button class="btn btn-success "><a  class="text-light" href="components/logout.php">Log out</a></button>
 
-
-
-                  <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle rounded-circle border-0 bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="components/images/user.jpg" height="20px" class="border-radius-sm rounded-circle"/>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <h2 class="text-center mr-5 fw-bolder">'.$_SESSION['useremail'].'</h2>
-                    <hr>
-                    <li><a class="dropdown-item" href="#"><img src="components/images/user.jpg" height="20px" class=" rounded float-left border-radius-sm rounded-circle"/>Profile</a></li>
+                 
+                 
                     
-                    <li><a class="dropdown-item" href="#"><img src="components/images/setting.png" height="20px" class="border-radius-sm rounded-circle"/>setting</a></li>
+                  
+                 
 
 
 
 
-               <button class="btn btn-outline-primary ml-2"><a href="components/logout.php">Log out</a></button>
+              
               ';               
        }
        
       
       
-       //<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Setting</button>
-
-      //  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      //    <div class="offcanvas-header">
-      //      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-      //      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      //    </div>
-      //    <div class="offcanvas-body">
-      //      <p>Try scrolling the rest of the page to see this option in action.</p>
-      //    </div>
-      //  </div>
 
 
 
@@ -217,19 +212,13 @@ include('components/login_modal.php');
 
  if(isset($_GET['signup'])&&$_GET['signup']==true)
  {
-   echo' <div class="alert alert-success my-0" role="alert">
-         <strong>Success! </strong> you can login now
-        </div>';
+   echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
+   <strong>Sucess!</strong> You can login now.
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   </div> ';
  }
-//  else 
-//        {
-//         $myerror=$_GET['error'];
-//         echo ' <div class="alert alert-danger my-0" role="alert">
-//           <strong>Sorry! </strong>' .$myerror.'
-//          </div>';
-// 
-//        }
-?>
- </body>
- </html>
 
+?>
+</body>
+
+</html>

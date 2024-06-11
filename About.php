@@ -57,7 +57,7 @@ nav {
          include('components/database.php');
          include('components/header.php');?>
    <div class="container">
-        <h1> <img src="components/images/logo2.png" height="60px" wigth="40px"></h1>
+        <h1> <a href="home.php"><img src="components/images/logo2.png" height="60px" wigth="40px"></a></h1>
         <p>Welcome to CodeHub, the ultimate coding forum for developers of all levels!</p>
         
         <h2>Purpose</h2>

@@ -8,9 +8,9 @@
    include('database.php');
 
 
-    $email=$_POST['useremail'];
+    $name=$_POST['username'];
     $pass=$_POST['password'];
-    $myrow="SELECT * FROM `users` Where user_email='$email'";
+    $myrow="SELECT * FROM `users` Where user_name='$name'";
     $myconn=mysqli_query($myconnect,$myrow);
     $myrow=mysqli_num_rows($myconn);
     if($myrow==1)
@@ -21,10 +21,14 @@
         session_start();
         $_SESSION['loggedin']=true;
         $_SESSION['sno'] = $rows['sno'];
-        $_SESSION['useremail']=$email;
+        $_SESSION['username']=$name;
+        echo "loggedin $name";
         header("location:/forum/home.php?login=true");
        }
-       header("location:/forum/home.php?login=error");
+       else{
+        echo"unable to log in";
+       }
+      //  header("location:/forum/home.php?login=error");
       
     }
     else

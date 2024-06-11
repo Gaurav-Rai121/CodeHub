@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 20px black;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>User Profile</h1>
+        </header>
+        <main>
+            <section class="profile">
+                <img src="profile_picture.jpg" alt="Profile Picture">
+                <h2>Username</h2>
+                <p>Email: user@example.com</p>
+                <p>Joined: January 1, 2024</p>
+                <p>Posts: 10</p>
+                <!-- Additional user details can be added here -->
+            </section>
+        </main>
+        <footer>
+            <!-- Footer content goes here -->
+        </footer>
+    </body>
+    </html>
+    
+    <script >
+        // JavaScript code for fetching user information, recent activity, and badges
+// This is just a placeholder, actual code will depend on your backend implementation
+
+// Fetch user information
+function fetchUserInfo() {
+    // Implement API call to get user information
+    // Populate the .profile-info section with user data
+}
+
+// Fetch recent activity
+function fetchRecentActivity() {
+    // Implement API call to get user's recent activity
+    // Populate the .recent-activity section with recent activity data
+}
+
+// Fetch user badges
+function fetchUserBadges() {
+    // Implement API call to get user's badges
+    // Populate the .badges section with user badges data
+}
+
+// Call functions to fetch data when the page loads
+window.onload = function() {
+    fetchUserInfo();
+    fetchRecentActivity();
+    fetchUserBadges();
+};
+
+    </script>
+
+</body>
+</html>

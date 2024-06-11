@@ -50,7 +50,7 @@
                 development.</p>
 <div class="logos">
     <div class="logos-slide">
-        <img src="components/images/c.jpeg">
+        <a><img src="components/images/c.jpeg"></a>
         <img src="components/images/c1.jpeg">
         <img src="components/images/c++.jpeg">
         <img src="components/images/js.jpeg">
@@ -95,6 +95,7 @@
                 $myid=$myrow2['category_id'];
                 $mytitle=$myrow2['category_name'];
                 $mydesc=$myrow2['category_desc'];
+                //fetching the category name
 
                 echo ' 
                

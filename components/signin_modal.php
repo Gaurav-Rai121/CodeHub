@@ -64,8 +64,15 @@
                             </div>
                         </div> -->
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">UserEmail:</label>
+                            <label for="exampleInputUsername" class="form-label">UserName:</label>
                             <input type="text" placeholder="enter your name" class="form-control"
+                                id="exampleInputUsername" name="username" aria-describedby="usernameHelp" min="4" max="20">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserEmail:</label>
+                            <input type="email" placeholder="enter your email" class="form-control"
                                 id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
 
                         </div>
@@ -79,9 +86,10 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" name="cpass">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Signin</button>
+                        <button type="submit" class="btn btn-success">Signin</button>
 
                     </div>
+                    
                   
                 </form>
             </div>

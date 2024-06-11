@@ -22,11 +22,25 @@
     }
     #user{
         text-decoration:none;
-        color:black;
+        /color:black; 
     }
     .comment{
       display:inline-block;
     }
+
+    nav {
+         background-color: white;
+         font-weight: 700;
+         /* border-bottom:2px,solid black; */
+         box-shadow: 0 10px 50px #d3d3d3;
+
+
+     }
+
+     nav ul li a:hover {
+         text-decoration: underline;
+         color: pink;
+     }
     </style>
 </head>
 
@@ -151,20 +165,20 @@ if($server=='POST')
                    
                     $user_id=$myrow2['thread_user_id'];
                     $mydesc=$myrow2['thread_des'];
-                    $myrow1="SELECT `user_email` FROM `users` WHERE `sno`=$user_id"; 
+                    $myrow1="SELECT `user_name` FROM `users` WHERE `sno`=$user_id"; 
                     $myconn1=mysqli_query($myconnect,$myrow1);  
                     $myfetch=mysqli_fetch_assoc($myconn1);
 
-                    echo '<div><d class="d-flex container my-0 border border-light py-2  shadow-sm p-3 mb-5 bg-white rounded">
+                    echo '<div><div class="d-flex container my-0 border border-light py-2  shadow-sm p-3 mb-5 bg-white rounded">
                     <div class="flex-shrink-0">
                     <img src="components/images/default.jpeg"  width="54px" alt="...">
                     </div>
                 
                     <div class="flex-grow-1  my-0">
-                    <p class="fw-bolder my-0">Asked by: <a href="user.php?ThreadUserId='.$user_id.'" id="user">' .$myfetch['user_email']. '</a></p>
-                    <h5 class="my-0"><a href="thread_list.php?threadid=' .$myid. '">' .$myname. '</a></h5>' .$mydesc. '
-                    </div></d
-                    <img src="components/images/comment.jpeg" class="float-left float-left" id="comment" width="28px" height="28px" alt="...">
+                    <p class="fw-bolder my-0">Asked by: ' .$myfetch['user_name']. '</p>
+                    <h5 class="my-0"><a href="thread_list.php?threadid=' .$myid. '">' .$myname. '</a></h5><pre class="overflow-auto">' .$mydesc. '</pre>
+                    </div></div>
+                    
                 </div>';
                 }
             

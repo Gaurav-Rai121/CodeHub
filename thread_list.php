@@ -1,4 +1,4 @@
-<?php session_start();
+<?php 
 
 
 if(isset( $_SESSION['loggedin'])  )
@@ -27,6 +27,20 @@ else
     #ans {
         background-color: rgb(240, 240, 240);
     }
+
+    nav {
+         background-color: white;
+         font-weight: 700;
+         /* border-bottom:2px,solid black; */
+         box-shadow: 0 10px 50px #d3d3d3;
+
+
+     }
+
+     nav ul li a:hover {
+         text-decoration: underline;
+         color: pink;
+     }
     </style>
 
 </head>
@@ -48,10 +62,10 @@ else
                 $mynam=$myrow2['thread_title'];
                 $myde=$myrow2['thread_des'];
                 $comm1=$myrow2['thread_user_id'];
-                $mysql1="SELECT user_email FROM `users` WHERE `sno`=$comm1 ";
+                $mysql1="SELECT user_name FROM `users` WHERE `sno`=$comm1 ";
                 $myconn3=mysqli_query($myconnect,$mysql1); 
                 $myrow2=mysqli_fetch_assoc($myconn3);
-                $posted_by=$myrow2['user_email'];
+                $posted_by=$myrow2['user_name'];
             }
             ?>
             <?php
@@ -157,7 +171,7 @@ else
                 $showalert2=false;
                 $mydesc=$myrow2['comment_desc'];
                 $comm=$myrow2['comment_by'];
-                $myrow1="SELECT user_email , sno FROM `users` WHERE `sno`=$comm "; 
+                $myrow1="SELECT user_name , sno FROM `users` WHERE `sno`=$comm "; 
                 $myconn1=mysqli_query($myconnect,$myrow1);  
                 $myfetch=mysqli_fetch_assoc($myconn1);
 
@@ -168,20 +182,17 @@ else
                
                 echo '
                
-                <div class="d-flex container my-2" my-2>
+                <div class="d-flex container my-2" >
                     <div class="flex-shrink-0">
                         <img src="components/images/default.jpeg" width="54px" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                    <p class="fw-bolder my-0">Posted by ' .$myfetch['user_email'].  ' <a href="components/message2.php?user_id='.$myfetch['sno']. '"><img src="components/images/chat.jpeg" width="22px" class="flex-shrink-0"></a><div id="main-content">
+                    <p class="fw-bolder ">Posted by ' .$myfetch['user_name'].  ' <div id="main-content">
                     <div>
-                  
-                   
-                  
-                      
-                    </div>
                   </div>
-                  <p>'.$mydesc.'
+                  </div>
+                  </p><pre>'.$mydesc.'</pre>
+                  <hr>
                     </div>
                     </div>';
                 }
@@ -196,7 +207,7 @@ else
                         <img src="components/images/default.jpeg" width="54px" alt="...">
                     </div>
                     <div class="flex-grow-1 ms-3">
-                    <p class="fw-bolder my-0">Posted by ' .$myfetch['user_email'].  '<div id="main-content">
+                    <p class="fw-bolder my-0">Posted by ' .$myfetch['user_name'].  '<div id="main-content">
                     <div>
                   
                    
